@@ -13,8 +13,7 @@ class PersonViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
+        tableView.rowHeight = 150
     }
 
     // MARK: - Table view data source
@@ -27,7 +26,7 @@ class PersonViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as! PersonCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PersonCell
         
         let person = persons[indexPath.row]
         cell.configur(with: person)

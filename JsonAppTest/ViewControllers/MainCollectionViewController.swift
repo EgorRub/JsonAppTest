@@ -58,7 +58,7 @@ class MainCollectionViewController: UICollectionViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showPersonList" {
             let personVC = segue.destination as! PersonViewController
-//            person.VC =
+            personVC.fetchPersons()
         }
     }
     

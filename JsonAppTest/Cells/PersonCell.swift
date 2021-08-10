@@ -17,11 +17,9 @@ class PersonCell: UITableViewCell {
     
     func configur(with person: Person){
         
-        idLabel.text = String(person.id ?? 0)
+        idLabel.text = "ID: \(String(person.id ?? 0))"
         authorLabel.text = person.author
         emailLabel.text = person.email
         titleLabel.text = person.title
-        
     }
-    
 }

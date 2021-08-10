@@ -73,15 +73,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="148" id="zP0-cd-yUl" customClass="PersonCell" customModule="JsonAppTest" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="24.5" width="375" height="148"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="166" id="zP0-cd-yUl" customClass="PersonCell" customModule="JsonAppTest" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="24.5" width="375" height="166"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zP0-cd-yUl" id="7ht-KT-WAR">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="148"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="166"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="HF4-tb-X5B">
-                                            <rect key="frame" x="10" y="6" width="57" height="132"/>
+                                            <rect key="frame" x="10" y="24" width="57" height="132"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IIV-Uu-xV6">
                                                     <rect key="frame" x="0.0" y="0.0" width="57" height="24"/>
@@ -151,24 +151,16 @@
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="TGj-ap-d4i">
                                 <rect key="frame" x="177" y="182" width="21" height="20"/>
                             </activityIndicatorView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7b-dw-hlT">
-                                <rect key="frame" x="162" y="343.5" width="51.5" height="24"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sYr-NP-6LJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="TGj-ap-d4i" firstAttribute="centerY" secondItem="bj6-Qv-11B" secondAttribute="centerY" id="2gL-gc-PvG"/>
                             <constraint firstItem="TGj-ap-d4i" firstAttribute="top" secondItem="sYr-NP-6LJ" secondAttribute="top" constant="138" id="7r8-kr-Sr3"/>
-                            <constraint firstItem="d7b-dw-hlT" firstAttribute="centerX" secondItem="VDH-YB-sjd" secondAttribute="centerX" id="B7A-KO-QgC"/>
                             <constraint firstItem="bj6-Qv-11B" firstAttribute="top" secondItem="sYr-NP-6LJ" secondAttribute="top" constant="12" id="N00-HN-xKv"/>
                             <constraint firstItem="TGj-ap-d4i" firstAttribute="centerX" secondItem="bj6-Qv-11B" secondAttribute="centerX" id="UB4-5J-7Ma"/>
                             <constraint firstItem="bj6-Qv-11B" firstAttribute="leading" secondItem="VDH-YB-sjd" secondAttribute="leading" id="YYV-GJ-qIj"/>
                             <constraint firstAttribute="trailing" secondItem="bj6-Qv-11B" secondAttribute="trailing" id="h8k-oR-tl5"/>
-                            <constraint firstItem="d7b-dw-hlT" firstAttribute="centerY" secondItem="sYr-NP-6LJ" secondAttribute="centerY" id="hli-dh-zg3"/>
                             <constraint firstItem="TGj-ap-d4i" firstAttribute="leading" secondItem="sYr-NP-6LJ" secondAttribute="leading" constant="177" id="nro-gS-3YC"/>
                         </constraints>
                     </view>
@@ -176,7 +168,6 @@
                     <connections>
                         <outlet property="activityIndicator" destination="TGj-ap-d4i" id="2xx-AP-SVN"/>
                         <outlet property="imageView" destination="bj6-Qv-11B" id="Pn9-sH-RqL"/>
-                        <outlet property="labelStatusCheck" destination="d7b-dw-hlT" id="vew-kg-I42"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bwj-Ri-zp0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
