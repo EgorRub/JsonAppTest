@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7498695D26C2DEE8007642A6 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7498695C26C2DEE8007642A6 /* PersonViewController.swift */; };
+		7498695F26C2E065007642A6 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7498695E26C2E065007642A6 /* Person.swift */; };
+		7498696726C2E37B007642A6 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7498696626C2E37B007642A6 /* PersonCell.swift */; };
 		74B9402526BFD7CB0008A676 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B9402426BFD7CB0008A676 /* AppDelegate.swift */; };
 		74B9402726BFD7CB0008A676 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B9402626BFD7CB0008A676 /* SceneDelegate.swift */; };
 		74B9402C26BFD7CB0008A676 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74B9402A26BFD7CB0008A676 /* Main.storyboard */; };
@@ -16,12 +19,12 @@
 		74B9403B26BFD9D40008A676 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B9403A26BFD9D40008A676 /* UserCell.swift */; };
 		74B9403D26BFE8130008A676 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B9403C26BFE8130008A676 /* ImageViewController.swift */; };
 		74B9403F26C06C420008A676 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B9403E26C06C410008A676 /* User.swift */; };
-		74B9404326C07C380008A676 /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B9404226C07C380008A676 /* Coordinates.swift */; };
-		74B9404526C07D4C0008A676 /* CityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B9404426C07D4C0008A676 /* CityTableViewController.swift */; };
-		74B9404726C07E4C0008A676 /* CoordinatesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B9404626C07E4C0008A676 /* CoordinatesCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7498695C26C2DEE8007642A6 /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
+		7498695E26C2E065007642A6 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		7498696626C2E37B007642A6 /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
 		74B9402126BFD7CB0008A676 /* JsonAppTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JsonAppTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74B9402426BFD7CB0008A676 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74B9402626BFD7CB0008A676 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,9 +36,6 @@
 		74B9403A26BFD9D40008A676 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		74B9403C26BFE8130008A676 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		74B9403E26C06C410008A676 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		74B9404226C07C380008A676 /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
-		74B9404426C07D4C0008A676 /* CityTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewController.swift; sourceTree = "<group>"; };
-		74B9404626C07E4C0008A676 /* CoordinatesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatesCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +49,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7498696126C2E074007642A6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7498695E26C2E065007642A6 /* Person.swift */,
+				74B9403E26C06C410008A676 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7498696226C2E07F007642A6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				74B9403C26BFE8130008A676 /* ImageViewController.swift */,
+				74B9403826BFD9B40008A676 /* MainCollectionViewController.swift */,
+				7498695C26C2DEE8007642A6 /* PersonViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7498696326C2E08C007642A6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7498696626C2E37B007642A6 /* PersonCell.swift */,
+				74B9403A26BFD9D40008A676 /* UserCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		74B9401826BFD7CA0008A676 = {
 			isa = PBXGroup;
 			children = (
@@ -71,13 +99,9 @@
 				74B9402426BFD7CB0008A676 /* AppDelegate.swift */,
 				74B9402626BFD7CB0008A676 /* SceneDelegate.swift */,
 				74B9402A26BFD7CB0008A676 /* Main.storyboard */,
-				74B9404426C07D4C0008A676 /* CityTableViewController.swift */,
-				74B9404226C07C380008A676 /* Coordinates.swift */,
-				74B9404626C07E4C0008A676 /* CoordinatesCell.swift */,
-				74B9403C26BFE8130008A676 /* ImageViewController.swift */,
-				74B9403826BFD9B40008A676 /* MainCollectionViewController.swift */,
-				74B9403E26C06C410008A676 /* User.swift */,
-				74B9403A26BFD9D40008A676 /* UserCell.swift */,
+				7498696226C2E07F007642A6 /* ViewControllers */,
+				7498696126C2E074007642A6 /* Model */,
+				7498696326C2E08C007642A6 /* Cells */,
 				74B9402D26BFD7D20008A676 /* Assets.xcassets */,
 				74B9402F26BFD7D20008A676 /* LaunchScreen.storyboard */,
 				74B9403226BFD7D20008A676 /* Info.plist */,
@@ -155,15 +179,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74B9404526C07D4C0008A676 /* CityTableViewController.swift in Sources */,
 				74B9402526BFD7CB0008A676 /* AppDelegate.swift in Sources */,
 				74B9403B26BFD9D40008A676 /* UserCell.swift in Sources */,
 				74B9403F26C06C420008A676 /* User.swift in Sources */,
-				74B9404726C07E4C0008A676 /* CoordinatesCell.swift in Sources */,
+				7498696726C2E37B007642A6 /* PersonCell.swift in Sources */,
 				74B9403D26BFE8130008A676 /* ImageViewController.swift in Sources */,
 				74B9403926BFD9B40008A676 /* MainCollectionViewController.swift in Sources */,
 				74B9402726BFD7CB0008A676 /* SceneDelegate.swift in Sources */,
-				74B9404326C07C380008A676 /* Coordinates.swift in Sources */,
+				7498695F26C2E065007642A6 /* Person.swift in Sources */,
+				7498695D26C2DEE8007642A6 /* PersonViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,34 +9,25 @@ import UIKit
 
 enum URLExamples: String {
     case imageStatus = "https://images.dog.ceo//breeds//deerhound-scottish//n02092002_49.jpg"
-    case selectionOne = "https://freegeoip.app/json/"
+    case selectionOne = "https://training.xcelvations.com/data/books.json"
 }
-
 
 enum UserActions: String, CaseIterable {
-    case downloadImage = "Download Image"
-    case selectCity = "Check Cordinates"
+    case downloadImage = "Click to See the Image"
+    case person = "Find List"
 }
 
-
 class MainCollectionViewController: UICollectionViewController {
+
     private let userActions = UserActions.allCases
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
 
     // MARK: UICollectionViewDataSource
-    
+
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         1
     }
+
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         userActions.count
@@ -45,34 +36,37 @@ class MainCollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! UserCell
         
-        cell.userActionLabel.text = userActions[indexPath.item].rawValue
+        let userAction = userActions[indexPath.item]
+        cell.userActionLabel.text = userAction.rawValue
         
         return cell
     }
     
+    // MARK: UICollectionViewDelegate
+    
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
         let userAction = userActions[indexPath.item]
         
         switch userAction {
         case .downloadImage: performSegue(withIdentifier: "showImage", sender: nil)
-        case .selectCity: performSegue(withIdentifier: "showCity", sender: nil)
+        case .person: performSegue(withIdentifier: "showPersonList", sender: nil)
         }
         
     }
     
-    // MARL: Navigation
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showCity" {
-            let cityVC = segue.destination as! CityTableViewController
-            cityVC.fetchCity()
+        if segue.identifier == "showPersonList" {
+            let personVC = segue.destination as! PersonViewController
+//            person.VC =
         }
     }
     
-    
-    
-}
 
+    // MARK: UICollectionViewDelegate
+
+ 
+}
 extension MainCollectionViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         CGSize(width: UIScreen.main.bounds.width - 48, height: 100)
