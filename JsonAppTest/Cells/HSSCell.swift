@@ -14,7 +14,7 @@ class HSSCell: UITableViewCell {
     
     func configur(with hhs: HSS){
         hhsLabel.text = hhs.definition
-//        instrumentsLabel.text = 
-//        linkedEventsLabel.text = hhs.linkedEvents
+        instrumentsLabel.text = hhs.instruments
+        linkedEventsLabel.text = hhs.linkedEvents
     }
 }

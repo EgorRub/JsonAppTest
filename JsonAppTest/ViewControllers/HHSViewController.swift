@@ -5,11 +5,11 @@
 //  Created by Егор on 11.08.2021.
 //
 
-import UIKit
+import Alamofire
 
 class HHSViewController: UITableViewController {
 
-    private let hss: [HSS] = []
+    private var hss: [HSS] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,8 +38,18 @@ class HHSViewController: UITableViewController {
 
 extension HHSViewController {
     func alamofireGetHSS() {
-    
-        
+        AF.request(URLExamples.alamofire.rawValue, method: .get)
+            .validate()
+            .responseJSON { dataResponse in
+                switch dataResponse.result {
+                case .success(let value):
+                    self.hss = HSS.getHSS (from: value)
+                    DispatchQueue.main.async {
+                        self.tableView.reloadData()
+                    }
+                case .failure(let error):
+                    print(error)
+                }
+            }
     }
-    
 }
