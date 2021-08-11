@@ -10,16 +10,19 @@ import UIKit
 enum URLExamples: String {
     case imageStatus = "https://images.dog.ceo//breeds//deerhound-scottish//n02092002_49.jpg"
     case selectionOne = "https://training.xcelvations.com/data/books.json"
+    case alamofire = "https://api.nasa.gov/DONKI/HSS?startDate=yyyy-MM-dd&endDate=yyyy-MM-dd&api_key=DEMO_KEY"
 }
 
 enum UserActions: String, CaseIterable {
-    case downloadImage = "Click to See the Image"
-    case person = "Find List"
+    case downloadImage = "Check an Image"
+    case person = "Find Book"
+    case alamofire = "Hight Speed Stream (HSS)"
 }
 
 class MainCollectionViewController: UICollectionViewController {
 
     private let userActions = UserActions.allCases
+    
     
 
     // MARK: UICollectionViewDataSource
@@ -51,6 +54,7 @@ class MainCollectionViewController: UICollectionViewController {
         switch userAction {
         case .downloadImage: performSegue(withIdentifier: "showImage", sender: nil)
         case .person: performSegue(withIdentifier: "showPersonList", sender: nil)
+        case .alamofire: performSegue(withIdentifier: "showHHS", sender: nil)
         }
         
     }
@@ -64,8 +68,13 @@ class MainCollectionViewController: UICollectionViewController {
     
 
     // MARK: UICollectionViewDelegate
-
- 
+    
+    
+    
+    // MARK: Navigation
+    
+    
+    
 }
 extension MainCollectionViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

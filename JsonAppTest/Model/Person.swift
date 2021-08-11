@@ -15,4 +15,12 @@ struct Person: Decodable {
     let email: String?
     let title: String?
     
+    var fullInformation: String {
+        """
+        Author: \(author!),
+        Email: \(email!),
+        Title: \(title!)
+        """
+    }
+    
 }

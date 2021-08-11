@@ -17,9 +17,9 @@ class PersonCell: UITableViewCell {
     
     func configur(with person: Person){
         
-        idLabel.text = "ID: \(String(person.id ?? 0))"
-        authorLabel.text = person.author
-        emailLabel.text = person.email
-        titleLabel.text = person.title
+//        idLabel.text = "ID: \(String(person.id ?? 0))"
+        authorLabel.text = "Author: \(person.author!)"
+//        emailLabel.text = person.email
+        titleLabel.text = "Book: \(person.title!)"
     }
 }

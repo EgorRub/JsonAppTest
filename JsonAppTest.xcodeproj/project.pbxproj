@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3AE701C1A3F35DAB6BD4DF5E /* Pods_JsonAppTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7D2281BC5781D5417DD6BD5 /* Pods_JsonAppTest.framework */; };
+		74248C4426C3E5C500D77CCF /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74248C4326C3E5C500D77CCF /* InformationViewController.swift */; };
+		7459F56826C4174B00A08806 /* Hight Speed Stream (HSS).swift in Sources */ = {isa = PBXBuildFile; fileRef = 7459F56726C4174B00A08806 /* Hight Speed Stream (HSS).swift */; };
+		7459F56A26C4306E00A08806 /* HHSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7459F56926C4306E00A08806 /* HHSViewController.swift */; };
+		7459F56C26C43C1700A08806 /* HSSCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7459F56B26C43C1700A08806 /* HSSCell.swift */; };
 		7498695D26C2DEE8007642A6 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7498695C26C2DEE8007642A6 /* PersonViewController.swift */; };
 		7498695F26C2E065007642A6 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7498695E26C2E065007642A6 /* Person.swift */; };
 		7498696726C2E37B007642A6 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7498696626C2E37B007642A6 /* PersonCell.swift */; };
@@ -18,10 +23,13 @@
 		74B9403926BFD9B40008A676 /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B9403826BFD9B40008A676 /* MainCollectionViewController.swift */; };
 		74B9403B26BFD9D40008A676 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B9403A26BFD9D40008A676 /* UserCell.swift */; };
 		74B9403D26BFE8130008A676 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B9403C26BFE8130008A676 /* ImageViewController.swift */; };
-		74B9403F26C06C420008A676 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B9403E26C06C410008A676 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		74248C4326C3E5C500D77CCF /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InformationViewController.swift; path = JsonAppTest/ViewControllers/InformationViewController.swift; sourceTree = SOURCE_ROOT; };
+		7459F56726C4174B00A08806 /* Hight Speed Stream (HSS).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hight Speed Stream (HSS).swift"; sourceTree = "<group>"; };
+		7459F56926C4306E00A08806 /* HHSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHSViewController.swift; sourceTree = "<group>"; };
+		7459F56B26C43C1700A08806 /* HSSCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSSCell.swift; sourceTree = "<group>"; };
 		7498695C26C2DEE8007642A6 /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
 		7498695E26C2E065007642A6 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		7498696626C2E37B007642A6 /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
@@ -35,7 +43,9 @@
 		74B9403826BFD9B40008A676 /* MainCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewController.swift; sourceTree = "<group>"; };
 		74B9403A26BFD9D40008A676 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		74B9403C26BFE8130008A676 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
-		74B9403E26C06C410008A676 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A90BDA2D52978C141A0BC07A /* Pods-JsonAppTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JsonAppTest.debug.xcconfig"; path = "Target Support Files/Pods-JsonAppTest/Pods-JsonAppTest.debug.xcconfig"; sourceTree = "<group>"; };
+		B7D2281BC5781D5417DD6BD5 /* Pods_JsonAppTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JsonAppTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF07DAF618135F7DBFC1B20C /* Pods-JsonAppTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JsonAppTest.release.xcconfig"; path = "Target Support Files/Pods-JsonAppTest/Pods-JsonAppTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +53,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AE701C1A3F35DAB6BD4DF5E /* Pods_JsonAppTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		623547C64112906A5BE7DFF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7D2281BC5781D5417DD6BD5 /* Pods_JsonAppTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7498696126C2E074007642A6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				7498695E26C2E065007642A6 /* Person.swift */,
-				74B9403E26C06C410008A676 /* User.swift */,
+				7459F56726C4174B00A08806 /* Hight Speed Stream (HSS).swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -61,9 +80,11 @@
 		7498696226C2E07F007642A6 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				74B9403C26BFE8130008A676 /* ImageViewController.swift */,
-				74B9403826BFD9B40008A676 /* MainCollectionViewController.swift */,
+				74248C4326C3E5C500D77CCF /* InformationViewController.swift */,
 				7498695C26C2DEE8007642A6 /* PersonViewController.swift */,
+				74B9403C26BFE8130008A676 /* ImageViewController.swift */,
+				7459F56926C4306E00A08806 /* HHSViewController.swift */,
+				74B9403826BFD9B40008A676 /* MainCollectionViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -71,10 +92,37 @@
 		7498696326C2E08C007642A6 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				7459F56B26C43C1700A08806 /* HSSCell.swift */,
 				7498696626C2E37B007642A6 /* PersonCell.swift */,
 				74B9403A26BFD9D40008A676 /* UserCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		7498696826C2F140007642A6 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				74B9402426BFD7CB0008A676 /* AppDelegate.swift */,
+				74B9402626BFD7CB0008A676 /* SceneDelegate.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		7498696926C2F157007642A6 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				74B9402A26BFD7CB0008A676 /* Main.storyboard */,
+				74B9402F26BFD7D20008A676 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		7498696A26C2F16E007642A6 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				74B9402D26BFD7D20008A676 /* Assets.xcassets */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 		74B9401826BFD7CA0008A676 = {
@@ -82,6 +130,8 @@
 			children = (
 				74B9402326BFD7CB0008A676 /* JsonAppTest */,
 				74B9402226BFD7CB0008A676 /* Products */,
+				D84D70F458908F9313030078 /* Pods */,
+				623547C64112906A5BE7DFF6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,17 +146,24 @@
 		74B9402326BFD7CB0008A676 /* JsonAppTest */ = {
 			isa = PBXGroup;
 			children = (
-				74B9402426BFD7CB0008A676 /* AppDelegate.swift */,
-				74B9402626BFD7CB0008A676 /* SceneDelegate.swift */,
-				74B9402A26BFD7CB0008A676 /* Main.storyboard */,
+				7498696826C2F140007642A6 /* SupportingFiles */,
+				7498696926C2F157007642A6 /* Storyboards */,
 				7498696226C2E07F007642A6 /* ViewControllers */,
 				7498696126C2E074007642A6 /* Model */,
 				7498696326C2E08C007642A6 /* Cells */,
-				74B9402D26BFD7D20008A676 /* Assets.xcassets */,
-				74B9402F26BFD7D20008A676 /* LaunchScreen.storyboard */,
+				7498696A26C2F16E007642A6 /* Source */,
 				74B9403226BFD7D20008A676 /* Info.plist */,
 			);
 			path = JsonAppTest;
+			sourceTree = "<group>";
+		};
+		D84D70F458908F9313030078 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A90BDA2D52978C141A0BC07A /* Pods-JsonAppTest.debug.xcconfig */,
+				DF07DAF618135F7DBFC1B20C /* Pods-JsonAppTest.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,9 +173,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 74B9403526BFD7D20008A676 /* Build configuration list for PBXNativeTarget "JsonAppTest" */;
 			buildPhases = (
+				DA0CB5F6373C44DB00F12D2D /* [CP] Check Pods Manifest.lock */,
 				74B9401D26BFD7CB0008A676 /* Sources */,
 				74B9401E26BFD7CB0008A676 /* Frameworks */,
 				74B9401F26BFD7CB0008A676 /* Resources */,
+				F41AC620FDD189DCECEF3149 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -174,6 +233,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DA0CB5F6373C44DB00F12D2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JsonAppTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F41AC620FDD189DCECEF3149 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JsonAppTest/Pods-JsonAppTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JsonAppTest/Pods-JsonAppTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JsonAppTest/Pods-JsonAppTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		74B9401D26BFD7CB0008A676 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -181,13 +282,16 @@
 			files = (
 				74B9402526BFD7CB0008A676 /* AppDelegate.swift in Sources */,
 				74B9403B26BFD9D40008A676 /* UserCell.swift in Sources */,
-				74B9403F26C06C420008A676 /* User.swift in Sources */,
 				7498696726C2E37B007642A6 /* PersonCell.swift in Sources */,
+				7459F56826C4174B00A08806 /* Hight Speed Stream (HSS).swift in Sources */,
 				74B9403D26BFE8130008A676 /* ImageViewController.swift in Sources */,
+				7459F56A26C4306E00A08806 /* HHSViewController.swift in Sources */,
 				74B9403926BFD9B40008A676 /* MainCollectionViewController.swift in Sources */,
 				74B9402726BFD7CB0008A676 /* SceneDelegate.swift in Sources */,
 				7498695F26C2E065007642A6 /* Person.swift in Sources */,
 				7498695D26C2DEE8007642A6 /* PersonViewController.swift in Sources */,
+				74248C4426C3E5C500D77CCF /* InformationViewController.swift in Sources */,
+				7459F56C26C43C1700A08806 /* HSSCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +435,7 @@
 		};
 		74B9403626BFD7D20008A676 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A90BDA2D52978C141A0BC07A /* Pods-JsonAppTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -349,6 +454,7 @@
 		};
 		74B9403726BFD7D20008A676 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF07DAF618135F7DBFC1B20C /* Pods-JsonAppTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

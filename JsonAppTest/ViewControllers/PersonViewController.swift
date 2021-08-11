@@ -34,6 +34,13 @@ class PersonViewController: UITableViewController {
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let indexPath = tableView.indexPathForSelectedRow {
+            let informationVC = segue.destination as! InformationViewController
+            informationVC.person = persons[indexPath.row]
+        }
+    }
+    
 }
 
 // MARK: - Networking
