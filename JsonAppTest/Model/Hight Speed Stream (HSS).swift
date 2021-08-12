@@ -24,8 +24,12 @@ struct HSS: Decodable {
     init(hssData: [String: Any]) {
         hssID = hssData["hssID"] as? String ?? ""
         eventTime = hssData["eventTime"] as? String ?? ""
-        instruments = hssData["instruments"] as? String ?? ""
-        linkedEvents = hssData["linkedEvents"] as? String ?? ""
+        let dictInstruments = hssData["instruments"] as? [String: String]
+        instruments = Instruments(value: dictInstruments ?? [:])
+        
+        let dictLindedEvents = hssData["linkedEvents"] as? [String: String]
+        linkedEvents = ActivityID(value: dictLindedEvents ?? [:])
+        
         link = hssData["linkedEvents"] as? String ?? ""
     }
         
@@ -38,9 +42,16 @@ struct HSS: Decodable {
 
 struct Instruments: Decodable {
     let displayName: String?
+    init(value: [String: String]) {
+        displayName = value["displayName"]
+
+        }
 }
 
 struct ActivityID: Decodable {
     let activityID: String?
+    init(value: [String: String]){
+        activityID = value["activityID"]
+    }
 }
 

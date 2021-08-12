@@ -168,6 +168,7 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="zbY-Jx-wHP" secondAttribute="trailing" id="1oU-C2-3ru"/>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="k1h-Am-JIj"/>
                                             </constraints>
                                         </stackView>
@@ -205,7 +206,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fullInformation" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G9h-6e-9hk">
-                                <rect key="frame" x="62" y="74" width="251" height="24"/>
+                                <rect key="frame" x="124.5" y="74" width="126" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="110" id="FBf-dU-gpc"/>
                                 </constraints>
@@ -217,9 +218,9 @@
                         <viewLayoutGuide key="safeArea" id="mhR-Mv-sfM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="mhR-Mv-sfM" firstAttribute="trailing" secondItem="G9h-6e-9hk" secondAttribute="trailing" constant="62" id="IaI-BN-lIe"/>
+                            <constraint firstItem="mhR-Mv-sfM" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="G9h-6e-9hk" secondAttribute="trailing" id="IaI-BN-lIe"/>
                             <constraint firstItem="G9h-6e-9hk" firstAttribute="top" secondItem="mhR-Mv-sfM" secondAttribute="top" constant="30" id="K8C-JZ-dJK"/>
-                            <constraint firstItem="G9h-6e-9hk" firstAttribute="leading" secondItem="mhR-Mv-sfM" secondAttribute="leading" constant="62" id="eEo-TW-4W2"/>
+                            <constraint firstItem="G9h-6e-9hk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mhR-Mv-sfM" secondAttribute="leading" id="eEo-TW-4W2"/>
                             <constraint firstItem="G9h-6e-9hk" firstAttribute="centerX" secondItem="8gR-uG-yGX" secondAttribute="centerX" id="tuk-Ga-LfE"/>
                         </constraints>
                     </view>

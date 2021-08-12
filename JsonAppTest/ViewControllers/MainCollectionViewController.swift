@@ -10,7 +10,7 @@ import UIKit
 enum URLExamples: String {
     case imageStatus = "https://images.dog.ceo//breeds//deerhound-scottish//n02092002_49.jpg"
     case selectionOne = "https://training.xcelvations.com/data/books.json"
-    case alamofire = "https://api.nasa.gov/DONKI/HSS?startDate=yyyy-MM-dd&endDate=yyyy-MM-dd&api_key=DEMO_KEY"
+    case alamofire = "https://api.nasa.gov/DONKI/HSS?startDate=2016-01-01&endDate=2016-01-31&api_key=DEMO_KEY"
 }
 
 enum UserActions: String, CaseIterable {
@@ -65,6 +65,7 @@ class MainCollectionViewController: UICollectionViewController {
             personVC.fetchPersons()
         }
     }
+    
     
 
     // MARK: UICollectionViewDelegate
