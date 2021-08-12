@@ -174,9 +174,15 @@
                                         </stackView>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="zbY-Jx-wHP" secondAttribute="trailing" constant="11" id="7RH-s6-f6v"/>
+                                        <constraint firstItem="DDh-CU-RHj" firstAttribute="leading" secondItem="5zY-Ow-KFx" secondAttribute="leading" constant="11" id="E2o-LF-hbN"/>
                                         <constraint firstItem="Msl-QF-f69" firstAttribute="centerX" secondItem="5zY-Ow-KFx" secondAttribute="centerX" id="QO1-BB-FI0"/>
                                         <constraint firstItem="Msl-QF-f69" firstAttribute="leading" secondItem="5zY-Ow-KFx" secondAttribute="leading" constant="11" id="Tzg-TV-doF"/>
+                                        <constraint firstAttribute="trailing" secondItem="8g1-d6-aOi" secondAttribute="trailing" constant="11" id="eme-i1-Wyc"/>
                                         <constraint firstItem="Msl-QF-f69" firstAttribute="centerY" secondItem="5zY-Ow-KFx" secondAttribute="centerY" id="fGp-8d-vMN"/>
+                                        <constraint firstItem="8g1-d6-aOi" firstAttribute="leading" secondItem="5zY-Ow-KFx" secondAttribute="leading" constant="11" id="hXA-nL-OWn"/>
+                                        <constraint firstItem="zbY-Jx-wHP" firstAttribute="leading" secondItem="5zY-Ow-KFx" secondAttribute="leading" constant="11" id="hr9-Qx-fwb"/>
+                                        <constraint firstAttribute="trailing" secondItem="DDh-CU-RHj" secondAttribute="trailing" constant="11" id="shE-zc-yLy"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>

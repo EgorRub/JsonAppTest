@@ -15,6 +15,7 @@
 		7498695D26C2DEE8007642A6 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7498695C26C2DEE8007642A6 /* PersonViewController.swift */; };
 		7498695F26C2E065007642A6 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7498695E26C2E065007642A6 /* Person.swift */; };
 		7498696726C2E37B007642A6 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7498696626C2E37B007642A6 /* PersonCell.swift */; };
+		749FCB9926C55D8F009E2F1C /* Network Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749FCB9826C55D8F009E2F1C /* Network Manager.swift */; };
 		74B9402526BFD7CB0008A676 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B9402426BFD7CB0008A676 /* AppDelegate.swift */; };
 		74B9402726BFD7CB0008A676 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B9402626BFD7CB0008A676 /* SceneDelegate.swift */; };
 		74B9402C26BFD7CB0008A676 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74B9402A26BFD7CB0008A676 /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 		7498695C26C2DEE8007642A6 /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
 		7498695E26C2E065007642A6 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		7498696626C2E37B007642A6 /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
+		749FCB9826C55D8F009E2F1C /* Network Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network Manager.swift"; sourceTree = "<group>"; };
 		74B9402126BFD7CB0008A676 /* JsonAppTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JsonAppTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74B9402426BFD7CB0008A676 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74B9402626BFD7CB0008A676 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +127,14 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		749FCB9A26C55D94009E2F1C /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				749FCB9826C55D8F009E2F1C /* Network Manager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
 		74B9401826BFD7CA0008A676 = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +162,7 @@
 				7498696126C2E074007642A6 /* Model */,
 				7498696326C2E08C007642A6 /* Cells */,
 				7498696A26C2F16E007642A6 /* Source */,
+				749FCB9A26C55D94009E2F1C /* NetworkManager */,
 				74B9403226BFD7D20008A676 /* Info.plist */,
 			);
 			path = JsonAppTest;
@@ -288,6 +299,7 @@
 				7459F56A26C4306E00A08806 /* HHSViewController.swift in Sources */,
 				74B9403926BFD9B40008A676 /* MainCollectionViewController.swift in Sources */,
 				74B9402726BFD7CB0008A676 /* SceneDelegate.swift in Sources */,
+				749FCB9926C55D8F009E2F1C /* Network Manager.swift in Sources */,
 				7498695F26C2E065007642A6 /* Person.swift in Sources */,
 				7498695D26C2DEE8007642A6 /* PersonViewController.swift in Sources */,
 				74248C4426C3E5C500D77CCF /* InformationViewController.swift in Sources */,
