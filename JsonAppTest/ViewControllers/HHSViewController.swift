@@ -13,7 +13,9 @@ class HHSViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.rowHeight = 100
+        
+        tableView.rowHeight = 300
+        alamofireGetHSS()
     }
 
     // MARK: - Table view data source

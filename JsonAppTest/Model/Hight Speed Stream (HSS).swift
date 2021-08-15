@@ -16,8 +16,8 @@ struct HSS: Decodable {
     
     var definition: String {
         """
-        \(hssID)
-        \(eventTime)
+        \(hssID!)
+        \(eventTime!)
         """
     }
     
