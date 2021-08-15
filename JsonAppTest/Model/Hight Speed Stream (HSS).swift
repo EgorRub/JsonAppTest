@@ -10,7 +10,7 @@ import Foundation
 struct HSS: Decodable {
     let hssID: String?
     let eventTime: String?
-    let instruments: Instruments
+    let instruments: [Instrument]
     let linkedEvents: ActivityID
     let link: String?
     
@@ -24,8 +24,8 @@ struct HSS: Decodable {
     init(hssData: [String: Any]) {
         hssID = hssData["hssID"] as? String ?? ""
         eventTime = hssData["eventTime"] as? String ?? ""
-        let dictInstruments = hssData["instruments"] as? [String: String]
-        instruments = Instruments(value: dictInstruments ?? [:])
+        let dictInstruments = hssData["instruments"] as? [[String: String]]
+        instruments = Instrument.getInstruments(value: dictInstruments ?? [])
         
         let dictLindedEvents = hssData["linkedEvents"] as? [String: String]
         linkedEvents = ActivityID(value: dictLindedEvents ?? [:])
@@ -40,12 +40,16 @@ struct HSS: Decodable {
     
 }
 
-struct Instruments: Decodable {
+struct Instrument: Decodable {
     let displayName: String?
     init(value: [String: String]) {
         displayName = value["displayName"]
-
         }
+    
+    static func getInstruments(value: Any) -> [Instrument] {
+        guard let instrumentsData = value as? [[String: String]] else { return [] }
+        return instrumentsData.compactMap { Instrument(value: $0) }
+    }
 }
 
 struct ActivityID: Decodable {

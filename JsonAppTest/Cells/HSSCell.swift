@@ -15,7 +15,12 @@ class HSSCell: UITableViewCell {
     func configur(with hhs: HSS){
         hhsLabel.text = hhs.definition
         
-        instrumentsLabel.text = hhs.instruments.displayName
+        instrumentsLabel.text = """
+                    \(hhs.instruments.first?.displayName ?? ""),
+                    \(hhs.instruments.last?.displayName ?? "")
+                    """
+        print(hhs.instruments)
+        
         linkedEventsLabel.text = hhs.linkedEvents.activityID
         
     }
